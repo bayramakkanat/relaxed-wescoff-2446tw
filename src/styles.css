@@ -1,0 +1,30 @@
+<style>{`
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+  @keyframes glow { 0%, 100% { box-shadow: 0 0 5px rgba(34,197,94,0.3); } 50% { box-shadow: 0 0 25px rgba(34,197,94,0.8); } }
+  @keyframes attackLeft { 
+    0% { transform: translateX(0) scaleX(-1); } 
+    50% { transform: translateX(40px) scaleX(-1); } 
+    100% { transform: translateX(0) scaleX(-1); } 
+  }
+  @keyframes attackRight { 
+    0% { transform: translateX(0); } 
+    50% { transform: translateX(-40px); } 
+    100% { transform: translateX(0); } 
+  }
+  @keyframes fadeOutLeft {
+    0% { transform: translateX(0) scaleX(-1) scale(1); opacity: 1; }
+    100% { transform: translateX(-50px) scaleX(-1) scale(0.5); opacity: 0; }
+  }
+  @keyframes fadeOutRight {
+    0% { transform: translateX(0) scale(1); opacity: 1; }
+    100% { transform: translateX(50px) scale(0.5); opacity: 0; }
+  }
+  @keyframes slideInLeft {
+    0% { transform: translateX(-40px) scaleX(-1) scale(0.8); opacity: 0; }
+    100% { transform: translateX(0) scaleX(-1) scale(1); opacity: 1; }
+  }
+  @keyframes slideInRight {
+    0% { transform: translateX(40px) scale(0.8); opacity: 0; }
+    100% { transform: translateX(0) scale(1); opacity: 1; }
+  }
+`}</style>
